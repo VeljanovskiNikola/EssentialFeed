@@ -10,6 +10,7 @@
 		4CF1728F2C6E5920002FAEE9 /* EssentialFeed.docc in Sources */ = {isa = PBXBuildFile; fileRef = 4CF1728E2C6E5920002FAEE9 /* EssentialFeed.docc */; };
 		4CF172952C6E5920002FAEE9 /* EssentialFeed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CF1728A2C6E5920002FAEE9 /* EssentialFeed.framework */; };
 		4CF1729A2C6E5920002FAEE9 /* EssentialFeedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF172992C6E5920002FAEE9 /* EssentialFeedTests.swift */; };
+		4CF172A52C6E5A2B002FAEE9 /* FeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF172A42C6E5A2B002FAEE9 /* FeedItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +28,7 @@
 		4CF1728E2C6E5920002FAEE9 /* EssentialFeed.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = EssentialFeed.docc; sourceTree = "<group>"; };
 		4CF172942C6E5920002FAEE9 /* EssentialFeedTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EssentialFeedTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CF172992C6E5920002FAEE9 /* EssentialFeedTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EssentialFeedTests.swift; sourceTree = "<group>"; };
+		4CF172A42C6E5A2B002FAEE9 /* FeedItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 		4CF1728C2C6E5920002FAEE9 /* EssentialFeed */ = {
 			isa = PBXGroup;
 			children = (
+				4CF172A42C6E5A2B002FAEE9 /* FeedItem.swift */,
 				4CF1728E2C6E5920002FAEE9 /* EssentialFeed.docc */,
 			);
 			path = EssentialFeed;
@@ -190,6 +193,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CF172A52C6E5A2B002FAEE9 /* FeedItem.swift in Sources */,
 				4CF1728F2C6E5920002FAEE9 /* EssentialFeed.docc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -402,6 +406,7 @@
 		4CF172A22C6E5920002FAEE9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 76YKNW8C9R;
@@ -417,6 +422,7 @@
 		4CF172A32C6E5920002FAEE9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 76YKNW8C9R;
