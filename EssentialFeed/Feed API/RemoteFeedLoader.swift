@@ -42,7 +42,6 @@ public final class RemoteFeedLoader {
                 do {
                     let items = try FeedItemsMapper.map(data, response)
                         completion(.success(items))
-                
                 } catch {
                     completion(.failure(.invalidData))
                 }
@@ -79,6 +78,6 @@ private class FeedItemsMapper {
             throw RemoteFeedLoader.Error.invalidData
         }
         return try JSONDecoder().decode(Root.self,
-                                         from: data).items.map { $0.item }
+                                        from: data).items.map { $0.item }
     }
 }
