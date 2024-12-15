@@ -81,7 +81,7 @@ class URLSessionHTTPClientTests: XCTestCase {
         override class func canInit(with request: URLRequest) -> Bool {
             guard let url = request.url else { return false }
             
-            return URLProtocolStub.stubs[url] != nil
+            return stubs[url] != nil
         }
         
         override class func canonicalRequest(for request: URLRequest) -> URLRequest {

@@ -9,10 +9,16 @@
     }
   ],
   "defaultOptions" : {
-
+    "testExecutionOrdering" : "random"
   },
   "testTargets" : [
-
+    {
+      "target" : {
+        "containerPath" : "container:EssentialFeed.xcodeproj",
+        "identifier" : "4CF172932C6E5920002FAEE9",
+        "name" : "EssentialFeedTests"
+      }
+    }
   ],
   "version" : 1
 }
