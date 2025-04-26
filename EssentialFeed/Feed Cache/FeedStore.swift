@@ -15,4 +15,5 @@ public protocol FeedStore {
     func insert(_ items: [LocalFeedImage],
                 timestamp: Date,
                 completion: @escaping InsertionCompletion)
+    func retrieve()
 }
