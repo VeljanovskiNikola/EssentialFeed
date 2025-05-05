@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C22797B2DC686DA0050E159 /* CodableFeedStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C22797A2DC686DA0050E159 /* CodableFeedStore.swift */; };
 		4C3B1D872DBD8EFE003B20A7 /* LoadFeedFromCacheUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3B1D862DBD8EFE003B20A7 /* LoadFeedFromCacheUseCaseTests.swift */; };
 		4C3B1D8A2DBD9078003B20A7 /* FeedStoreSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3B1D892DBD9078003B20A7 /* FeedStoreSpy.swift */; };
 		4C9B75712CB80E94008843E4 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9B75702CB80E94008843E4 /* HTTPClient.swift */; };
@@ -52,6 +53,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4C22797A2DC686DA0050E159 /* CodableFeedStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableFeedStore.swift; sourceTree = "<group>"; };
 		4C3B1D862DBD8EFE003B20A7 /* LoadFeedFromCacheUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadFeedFromCacheUseCaseTests.swift; sourceTree = "<group>"; };
 		4C3B1D892DBD9078003B20A7 /* FeedStoreSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedStoreSpy.swift; sourceTree = "<group>"; };
 		4C9B75702CB80E94008843E4 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
@@ -159,6 +161,7 @@
 				4CE99DB42D4C0BF600157547 /* LocalFeedLoader.swift */,
 				4CE99DB62D4C0C9C00157547 /* FeedStore.swift */,
 				4CDDEEDA2DBD838C004B9F36 /* LocalFeedImage.swift */,
+				4C22797A2DC686DA0050E159 /* CodableFeedStore.swift */,
 			);
 			path = "Feed Cache";
 			sourceTree = "<group>";
@@ -374,6 +377,7 @@
 				4CF172A72C6E5BB8002FAEE9 /* FeedLoader.swift in Sources */,
 				4C9B75732CB80F7C008843E4 /* FeedItemsMapper.swift in Sources */,
 				4CDDEED92DBD832B004B9F36 /* RemoteFeedItem.swift in Sources */,
+				4C22797B2DC686DA0050E159 /* CodableFeedStore.swift in Sources */,
 				4CF172A52C6E5A2B002FAEE9 /* FeedItem.swift in Sources */,
 				4CE99DB52D4C0BF600157547 /* LocalFeedLoader.swift in Sources */,
 				4CF1728F2C6E5920002FAEE9 /* EssentialFeed.docc in Sources */,
