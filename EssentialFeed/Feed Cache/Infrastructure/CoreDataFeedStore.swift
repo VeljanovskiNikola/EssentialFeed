@@ -37,6 +37,7 @@ public final class CoreDataFeedStore: FeedStore {
                 let managedCache = try ManagedCache.newUniqueInstance(in: context)
                 managedCache.timestamp = timestamp
                 managedCache.feed = ManagedFeedImage.images(from: feed, in: context)
+                
                 try context.save()
                 completion(nil)
             } catch {
@@ -58,6 +59,6 @@ public final class CoreDataFeedStore: FeedStore {
     
     private func perform(_ action: @escaping (NSManagedObjectContext) -> Void) {
         let context = self.context
-        action(context)
+        context.perform { action(context) }
     }
 }
