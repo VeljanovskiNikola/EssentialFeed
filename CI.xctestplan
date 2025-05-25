@@ -1,7 +1,7 @@
 {
   "configurations" : [
     {
-      "id" : "D38FDFEF-A852-4352-9908-26AD88625E01",
+      "id" : "22260409-F1DC-4868-92B9-0ACDF6302A49",
       "name" : "Configuration 1",
       "options" : {
 
@@ -17,6 +17,13 @@
         "containerPath" : "container:EssentialFeed.xcodeproj",
         "identifier" : "4CF172932C6E5920002FAEE9",
         "name" : "EssentialFeedTests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:EssentialFeed.xcodeproj",
+        "identifier" : "4C0E95D02DCD3EAB00FE5286",
+        "name" : "EssentialFeedCacheIntegrationTests"
       }
     },
     {
