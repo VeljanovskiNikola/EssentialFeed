@@ -81,12 +81,12 @@ extension FeedStoreSpecs where Self: XCTestCase {
         
         sut.retrieve { retrievedResult in
             switch (expectedResult, retrievedResult) {
-            case (.empty, .empty),
+            case (.success(.empty), .success(.empty)),
                 (.failure, .failure):
                 break
                 
-            case let(.found(expectedFeed, expectedTimestamp),
-                     .found(retrievedFeed, retrievedTimestamp)):
+            case let(.success(.found(expectedFeed, expectedTimestamp)),
+                     .success(.found(retrievedFeed, retrievedTimestamp))):
                 XCTAssertEqual(retrievedFeed, expectedFeed, file: file, line: line)
                 XCTAssertEqual(retrievedTimestamp, expectedTimestamp, file: file, line: line)
                 
