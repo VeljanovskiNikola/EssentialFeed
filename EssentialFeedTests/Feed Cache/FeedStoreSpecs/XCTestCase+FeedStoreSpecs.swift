@@ -65,7 +65,7 @@ extension FeedStoreSpecs where Self: XCTestCase {
     }
     
     func expect(_ sut: FeedStore,
-                toRetrieveTwice expectedResult: RetrieveCachedFeedResult,
+                toRetrieveTwice expectedResult: FeedStore.RetrievalResult,
                 file: StaticString = #filePath,
                 line: UInt = #line) {
         expect(sut, toRetrieve: expectedResult, file: file, line: line)
@@ -73,7 +73,7 @@ extension FeedStoreSpecs where Self: XCTestCase {
     }
     
     func expect(_ sut: FeedStore,
-                toRetrieve expectedResult: RetrieveCachedFeedResult,
+                toRetrieve expectedResult: FeedStore.RetrievalResult,
                 file: StaticString = #filePath,
                 line: UInt = #line) {
         
@@ -81,14 +81,13 @@ extension FeedStoreSpecs where Self: XCTestCase {
         
         sut.retrieve { retrievedResult in
             switch (expectedResult, retrievedResult) {
-            case (.success(.empty), .success(.empty)),
+            case (.success(.none), .success(.none)),
                 (.failure, .failure):
                 break
                 
-            case let(.success(.found(expectedFeed, expectedTimestamp)),
-                     .success(.found(retrievedFeed, retrievedTimestamp))):
-                XCTAssertEqual(retrievedFeed, expectedFeed, file: file, line: line)
-                XCTAssertEqual(retrievedTimestamp, expectedTimestamp, file: file, line: line)
+            case let(.success(.some(expected)), .success(.some(retrieved))):
+                XCTAssertEqual(retrieved.feed, expected.feed, file: file, line: line)
+                XCTAssertEqual(retrieved.timestamp, expected.timestamp, file: file, line: line)
                 
             default:
                 XCTFail("Expected to retrieve \(expectedResult), got \(retrievedResult) instead",
