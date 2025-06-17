@@ -1,0 +1,62 @@
+# Xcode
+build/
+DerivedData/
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+xcuserdata/
+*.xccheckout
+*.xcscmblueprint
+*.xcframework
+
+# Swift Package Manager
+.build/
+Packages/
+Package.pins
+Package.resolved
+.swiftpm/
+
+# CocoaPods
+Pods/
+Podfile.lock
+
+# Carthage
+Carthage/
+Carthage/Build/
+
+# Fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/**/*.png
+fastlane/test_output
+
+# Firebase
+GoogleService-Info.plist
+
+# Device support
+DeviceSupport/
+
+# Archives
+*.xcarchive
+
+# Temp & logs
+*.swp
+*.lock
+*.xcuserstate
+*.moved-aside
+*.log
+
+# IDE preferences
+.idea/
+*.iml
+
+# Misc
+.DS_Store
+*.orig
+
+# App Thinning
+AppThinning.plist
+
+# SwiftPM binary artifacts
+.artifacts/
