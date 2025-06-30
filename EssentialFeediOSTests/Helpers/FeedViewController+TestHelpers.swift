@@ -43,12 +43,12 @@ extension FeedViewController {
     func simulateAppearance() {
         if !isViewLoaded {
             loadViewIfNeeded()
-            replaceRefreshControlWithFakeForiOS17Support()
+            prepareForFirstAppearance()
         }
         beginAppearanceTransition(true, animated: false)
         endAppearanceTransition()
     }
-
+    
     var isShowingLoadingIndicator: Bool {
         refreshControl?.isRefreshing == true
     }
@@ -66,8 +66,17 @@ extension FeedViewController {
     private var feedImageSection: Int {
         return 0
     }
+        
+    private func prepareForFirstAppearance() {
+        setSmallFrameToPreventRenderingCells()
+        replaceRefreshControlWithFakeForiOS17Support()
+    }
     
-    func replaceRefreshControlWithFakeForiOS17Support() {
+    private func setSmallFrameToPreventRenderingCells() {
+        tableView.frame = CGRect(x: 0, y: 0, width: 390, height: 1)
+    }
+    
+    private func replaceRefreshControlWithFakeForiOS17Support() {
         let fake = FakeUIRefreshControl()
         
         refreshControl?.allTargets.forEach { target in
@@ -79,5 +88,6 @@ extension FeedViewController {
         }
         
         refreshControl = fake
+        refreshController?.view = fake
     }
 }

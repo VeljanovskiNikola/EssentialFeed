@@ -9,7 +9,7 @@ import Foundation
 import EssentialFeed
 import EssentialFeediOS
 
-class LoaderSpy: FeedLoader, FeedImageDataLoader {
+final class LoaderSpy: FeedLoader, FeedImageDataLoader {
     
     init() {}
     
