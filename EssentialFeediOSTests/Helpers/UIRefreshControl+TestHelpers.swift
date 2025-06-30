@@ -12,3 +12,17 @@ public extension UIRefreshControl {
         simulate(event: .valueChanged)
     }
 }
+
+public class FakeUIRefreshControl: UIRefreshControl {
+    private var _isRefreshing = false
+    
+    public override var isRefreshing: Bool { _isRefreshing }
+    
+    public override func beginRefreshing() {
+        _isRefreshing = true
+    }
+    
+    public override func endRefreshing() {
+        _isRefreshing = false
+    }
+}
