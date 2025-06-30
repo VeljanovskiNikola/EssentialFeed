@@ -152,6 +152,7 @@
 		4C82CAA02E12B32400A34F5C /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
+				"Helpers/FeedImageCell+TestHelpers.swift",
 				"Helpers/FeedViewController+TestHelpers.swift",
 				"Helpers/UIButton+TestHelpers.swift",
 				"Helpers/UIControl+TestHelpers.swift",
@@ -163,6 +164,7 @@
 		4C82CAA12E12B32400A34F5C /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
+				"Helpers/FeedImageCell+TestHelpers.swift",
 				"Helpers/FeedViewController+TestHelpers.swift",
 				"Helpers/UIButton+TestHelpers.swift",
 				"Helpers/UIControl+TestHelpers.swift",
