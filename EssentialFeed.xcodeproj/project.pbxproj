@@ -153,6 +153,7 @@
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				"Helpers/UIImage+TestHelpers.swift",
+				"Helpers/UIRefreshControl+TestHelpers.swift",
 			);
 			target = 4CA427EA2E01E82300295A3A /* EssentialFeediOS */;
 		};
@@ -160,6 +161,7 @@
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				"Helpers/UIImage+TestHelpers.swift",
+				"Helpers/UIRefreshControl+TestHelpers.swift",
 			);
 			target = 4CA427F42E01E82300295A3A /* EssentialFeediOSTests */;
 		};
