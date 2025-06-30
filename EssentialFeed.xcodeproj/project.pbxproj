@@ -153,6 +153,7 @@
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				"Helpers/UIButton+TestHelpers.swift",
+				"Helpers/UIControl+TestHelpers.swift",
 				"Helpers/UIImage+TestHelpers.swift",
 				"Helpers/UIRefreshControl+TestHelpers.swift",
 			);
@@ -162,6 +163,7 @@
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				"Helpers/UIButton+TestHelpers.swift",
+				"Helpers/UIControl+TestHelpers.swift",
 				"Helpers/UIImage+TestHelpers.swift",
 				"Helpers/UIRefreshControl+TestHelpers.swift",
 			);
