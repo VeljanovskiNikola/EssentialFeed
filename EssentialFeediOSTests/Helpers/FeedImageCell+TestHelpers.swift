@@ -6,8 +6,9 @@
 //
 
 import Foundation
+import EssentialFeediOS
 
-public extension FeedImageCell {
+extension FeedImageCell {
     func simulateRetryAction() {
         feedImageRetryButton.simulateTap()
     }

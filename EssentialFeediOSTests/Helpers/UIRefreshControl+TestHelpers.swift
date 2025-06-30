@@ -7,22 +7,22 @@
 
 import UIKit
 
-public extension UIRefreshControl {
+extension UIRefreshControl {
     func simulatePullToRefresh() {
         simulate(event: .valueChanged)
     }
 }
 
-public class FakeUIRefreshControl: UIRefreshControl {
+class FakeUIRefreshControl: UIRefreshControl {
     private var _isRefreshing = false
     
-    public override var isRefreshing: Bool { _isRefreshing }
+    override var isRefreshing: Bool { _isRefreshing }
     
-    public override func beginRefreshing() {
+    override func beginRefreshing() {
         _isRefreshing = true
     }
     
-    public override func endRefreshing() {
+    override func endRefreshing() {
         _isRefreshing = false
     }
 }
