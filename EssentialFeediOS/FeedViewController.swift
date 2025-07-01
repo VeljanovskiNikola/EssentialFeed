@@ -12,7 +12,9 @@ public final class FeedViewController: UITableViewController, UITableViewDataSou
     public var refreshController: FeedRefreshViewController?
     private var imageLoader: FeedImageDataLoader?
     private var viewAppeared: Bool = false
-    private var tableModel = [FeedImage]()
+    private var tableModel = [FeedImage]() {
+        didSet { tableView.reloadData() }
+    }
     private var tasks = [IndexPath: FeedImageDataLoaderTask]()
     
     public convenience init(feedLoader: FeedLoader, imageLoader: FeedImageDataLoader) {
@@ -23,21 +25,22 @@ public final class FeedViewController: UITableViewController, UITableViewDataSou
     
     public override func viewDidLoad() {
         super.viewDidLoad()
-        
-        refreshControl = refreshController?.view
         tableView.prefetchDataSource = self
-        refreshController?.refresh()
     }
     
     public override func viewIsAppearing(_ animated: Bool) {
         super.viewIsAppearing(animated)
+        
+        refreshController?.onRefresh = { [weak self] feed in
+            self?.tableModel = feed
+        }
         
         if !viewAppeared {
             refreshController?.refresh()
             viewAppeared = true
         }
     }
-    
+        
     public override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return tableModel.count
     }
