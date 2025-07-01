@@ -81,7 +81,7 @@ extension FeedViewController {
         
         refreshControl?.allTargets.forEach { target in
             refreshControl?.actions(forTarget: target, forControlEvent: .valueChanged)?.forEach { action in
-                fake.addTarget(self,
+                fake.addTarget(target,
                                action: Selector(action),
                                for: .valueChanged)
             }
