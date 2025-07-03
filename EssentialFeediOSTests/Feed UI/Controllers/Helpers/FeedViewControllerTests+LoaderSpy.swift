@@ -50,7 +50,7 @@ final class LoaderSpy: FeedLoader, FeedImageDataLoader {
         return imageRequests.map { $0.url }
     }
     
-    private(set) var cancelledImageURLs = [URL]()
+    private(set) var ewMode = [URL]()
     
     func loadImageData(from url: URL,
                        completion: @escaping (FeedImageDataLoader.Result) -> Void) -> FeedImageDataLoaderTask {
