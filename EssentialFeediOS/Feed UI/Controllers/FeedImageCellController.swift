@@ -5,13 +5,12 @@
 //  Created by Nikola Veljanovski on 2.7.25.
 //
 
-import EssentialFeed
 import UIKit
 
 final class FeedImageCellController {
-    private let viewModel: FeedImageViewModel
+    private let viewModel: FeedImageViewModel<UIImage>
     
-    init(viewModel: FeedImageViewModel) {
+    init(viewModel: FeedImageViewModel<UIImage>) {
         self.viewModel = viewModel
     }
 
