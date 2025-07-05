@@ -77,6 +77,9 @@
                                                             <state key="normal" title="↻">
                                                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             </state>
+                                                            <connections>
+                                                                <action selector="retryButtonTapped" destination="axE-mV-lse" eventType="touchUpInside" id="8oY-Xa-Fb7"/>
+                                                            </connections>
                                                         </button>
                                                     </subviews>
                                                     <color key="backgroundColor" red="0.89019607840000003" green="0.89019607840000003" blue="0.89019607840000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -118,6 +121,14 @@
                                         <constraint firstAttribute="bottomMargin" secondItem="WJC-Ik-f3G" secondAttribute="bottom" priority="999" constant="6" id="zcE-JM-06Q"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="descriptionLabel" destination="Lm2-1X-YZC" id="mjX-52-ya2"/>
+                                    <outlet property="feedImageContainer" destination="vcs-8g-Vj6" id="LzF-YT-73R"/>
+                                    <outlet property="feedImageRetryButton" destination="rsc-88-TVr" id="lQO-kG-2JK"/>
+                                    <outlet property="feedImageView" destination="uiU-Kf-pQC" id="Ttz-bI-wxt"/>
+                                    <outlet property="locationContainer" destination="Ivt-H6-AB4" id="8H6-O5-eaO"/>
+                                    <outlet property="locationLabel" destination="KhE-Yh-Zbn" id="jcZ-oF-kaI"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
