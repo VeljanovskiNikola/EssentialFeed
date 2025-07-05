@@ -36,7 +36,6 @@ extension WeakRefVirtualProxy: FeedLoadingView where T: FeedLoadingView {
 }
 
 private final class FeedViewAdapter: FeedView {
-    
     private weak var controller: FeedViewController?
     private let imageLoader: FeedImageDataLoader
     
