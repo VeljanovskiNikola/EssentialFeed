@@ -52,6 +52,10 @@ extension FeedViewController {
         endAppearanceTransition()
     }
     
+    var errorMessage: String? {
+        errorView.message
+    }
+    
     var isShowingLoadingIndicator: Bool {
         refreshControl?.isRefreshing == true
     }
