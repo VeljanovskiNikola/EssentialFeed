@@ -44,8 +44,8 @@
 		4CA8643D2DC177F100A6B9DC /* FeedCacheTestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA8643C2DC177F100A6B9DC /* FeedCacheTestHelpers.swift */; };
 		4CA8643F2DC178B900A6B9DC /* SharedTestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA8643E2DC178B900A6B9DC /* SharedTestHelpers.swift */; };
 		4CA864402DC178B900A6B9DC /* SharedTestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA8643E2DC178B900A6B9DC /* SharedTestHelpers.swift */; };
-		4CA8EA172E2E9DA100873D05 /* FeedImageDataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA8E9F02E2E9DA100873D05 /* FeedImageDataLoader.swift */; };
 		4CA8EA302E300BF300873D05 /* RemoteFeedImageDataLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA8EA2F2E300BF300873D05 /* RemoteFeedImageDataLoaderTests.swift */; };
+		4CA8EA312E300EB600873D05 /* FeedImageDataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA8E9F02E2E9DA100873D05 /* FeedImageDataLoader.swift */; };
 		4CCF61AB2C792940002549F4 /* RemoteFeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCF61AA2C792940002549F4 /* RemoteFeedLoader.swift */; };
 		4CCF61AD2C7A27EF002549F4 /* LoadFeedFromRemoteUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCF61A72C791229002549F4 /* LoadFeedFromRemoteUseCaseTests.swift */; };
 		4CDDEED92DBD832B004B9F36 /* RemoteFeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDDEED82DBD832B004B9F36 /* RemoteFeedItem.swift */; };
@@ -688,7 +688,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4CA8EA172E2E9DA100873D05 /* FeedImageDataLoader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -723,6 +722,7 @@
 				4C0E95CA2DCD2C0200FE5286 /* ManagedCache.swift in Sources */,
 				4C7BF6952DC96ABD00F92036 /* CoreDataFeedStore.swift in Sources */,
 				4C6F37A72E2D217000B932C5 /* FeedErrorViewModel.swift in Sources */,
+				4CA8EA312E300EB600873D05 /* FeedImageDataLoader.swift in Sources */,
 				4C6F37A52E2D216200B932C5 /* FeedLoadingViewModel.swift in Sources */,
 				4C6F37AC2E2D941D00B932C5 /* FeedImagePresenter.swift in Sources */,
 				4C0E95CC2DCD2C2900FE5286 /* ManagedFeedImage.swift in Sources */,
